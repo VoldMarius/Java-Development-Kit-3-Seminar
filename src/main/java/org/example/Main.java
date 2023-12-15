@@ -19,14 +19,18 @@ public class Main {
         myNewList.print();
         System.out.println("Size:"+ myNewList.getSize());
 
-        Integer element = 23;
-        myNewList.addElement(element);
-        System.out.println("Size:"+ myNewList.getSize());
-        myNewList.print();
-        myNewList.remuoveElement(1);
-        System.out.println("Size:"+ myNewList.getSize());
-        myNewList.print();
-
+//        Integer element = 23;
+//        myNewList.addElement(element);
+//        System.out.println("Size:"+ myNewList.getSize());
+//        myNewList.print();
+//        myNewList.remuoveElement(1);
+//        System.out.println("Size:"+ myNewList.getSize());
+//        myNewList.print();
+        for (Number number:
+                myNewList ) {
+            System.out.println(number);
+            
+        }
 
 
     }

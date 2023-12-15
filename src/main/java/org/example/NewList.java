@@ -1,10 +1,13 @@
 package org.example;
+
+import java.util.Iterator;
+
 //дание:
 //– Описать собственную коллекцию – список
 // на основе массива. Коллекция должна иметь
 //возможность хранить любые типы данных,
 // иметь методы добавления и удаления элементов.
-public class NewList<E> {
+public class NewList<E>  implements Iterable<E> {
     private E[] array;
     private int size;
 
@@ -46,8 +49,31 @@ public class NewList<E> {
              ) {
             System.out.print (elements+" ");
         }
-        System.out.println("-------------------");
+        System.out.println();
 
     }
+    public class MyListIterator  implements Iterator<E> {
+        int index;
+
+        public MyListIterator() {
+            this.index = 0;
+
+        }
+
+        @Override
+        public boolean hasNext() {
+            return index < size;
+        }
+
+        @Override
+        public E next() {
+
+            return array[index++];
+        }
+    }
+        @Override
+        public Iterator<E> iterator() {
+            return new MyListIterator();
+        }
 
 }
