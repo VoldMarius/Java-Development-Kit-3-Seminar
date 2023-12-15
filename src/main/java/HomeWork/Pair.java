@@ -1,21 +1,15 @@
 package HomeWork;
 
 public class Pair<T, K> {
-    private T cat;
-    private K age;
+    private final T cat;
+    private final K age;
 
     public Pair(T cat, K age) {
         this.cat = cat;
         this.age = age;
     }
 
-    public T getFirst() {
-        return cat;
-    }
 
-    public K getSecond() {
-        return age;
-    }
 
     @Override
     public String toString() {

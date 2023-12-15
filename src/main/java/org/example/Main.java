@@ -1,9 +1,5 @@
 package org.example;
-import HomeWork.ArrayComparer;
 import HomeWork.Pair;
-
-import java.util.HashMap;
-import java.util.Map;
 
 
 public class Main {
