@@ -1,5 +1,9 @@
 package org.example;
 import HomeWork.ArrayComparer;
+import HomeWork.Pair;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class Main {
@@ -39,11 +43,18 @@ public class Main {
 //        System.out.println(num1 + " * " + num2 + " = " + Calculator.multiply(num1, num2));
 //        System.out.println(num1 + " / " + num2 + " = " + Calculator.divide(num1, num2));
 //        }
-        ArrayComparer arrayComparer = new ArrayComparer();
-        Integer[] arr0  = new Integer[]{1, 2, 3, 4, 6};
-        String[]  arr1  = new String[] {"Z", "rj", "3", "9765w3+88/", "inyresdfv"};
+//        ArrayComparer arrayComparer = new ArrayComparer();
+//        Integer[] arr0  = new Integer[]{1, 2, 3, 4, 6};
+//        String[]  arr1  = new String[] {"Z", "rj", "3", "9765w3+88/", "inyresdfv"};
+//
+//            System.out.println(arrayComparer.compareArrays(arr0, arr1));
+//        }
+        String NAME = "Мурка";
+        Integer AGE = 2;
+        Pair<String, Integer> pair1 = new Pair<>(NAME, AGE);
 
-            System.out.println(arrayComparer.compareArrays(arr0, arr1));
-        }
+        System.out.println(pair1);
+
     }
+}
 
