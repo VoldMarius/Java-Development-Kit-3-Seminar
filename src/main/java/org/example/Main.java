@@ -1,4 +1,5 @@
 package org.example;
+import HomeWork.ArrayComparer;
 import HomeWork.Calculator;
 
 public class Main {
@@ -30,13 +31,19 @@ public class Main {
 //                myNewList ) {
 //            System.out.println(number);
 //
+////        }
+//        int num1 = 234;
+//        float num2 = 0.456f;
+//        System.out.println(num1 + " + " + num2 + " = " + Calculator.sum(num1, num2));
+//        System.out.println(num1 + " - " + num2 + " = " + Calculator.subtract(num1, num2));
+//        System.out.println(num1 + " * " + num2 + " = " + Calculator.multiply(num1, num2));
+//        System.out.println(num1 + " / " + num2 + " = " + Calculator.divide(num1, num2));
 //        }
-        int num1 = 234;
-        float num2 = 0.456f;
-        System.out.println(num1 + " + " + num2 + " = " + Calculator.sum(num1, num2));
-        System.out.println(num1 + " - " + num2 + " = " + Calculator.subtract(num1, num2));
-        System.out.println(num1 + " * " + num2 + " = " + Calculator.multiply(num1, num2));
-        System.out.println(num1 + " / " + num2 + " = " + Calculator.divide(num1, num2));
-        }
+        ArrayComparer arrayComparer = new ArrayComparer();
+        Integer[] arr0  = new Integer[]{1, 2, 3, 4, 6};;
+        String[]  arr1  = new String[] {"Z", "rj", "3", "9765w3+88/", "inyresdfv"};;
 
+            System.out.println(arrayComparer.compareArrays(arr0, arr1));
+        }
     }
+
