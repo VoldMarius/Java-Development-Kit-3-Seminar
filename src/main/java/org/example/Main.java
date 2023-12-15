@@ -1,6 +1,6 @@
 package org.example;
 import HomeWork.ArrayComparer;
-import HomeWork.Calculator;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -40,8 +40,8 @@ public class Main {
 //        System.out.println(num1 + " / " + num2 + " = " + Calculator.divide(num1, num2));
 //        }
         ArrayComparer arrayComparer = new ArrayComparer();
-        Integer[] arr0  = new Integer[]{1, 2, 3, 4, 6};;
-        String[]  arr1  = new String[] {"Z", "rj", "3", "9765w3+88/", "inyresdfv"};;
+        Integer[] arr0  = new Integer[]{1, 2, 3, 4, 6};
+        String[]  arr1  = new String[] {"Z", "rj", "3", "9765w3+88/", "inyresdfv"};
 
             System.out.println(arrayComparer.compareArrays(arr0, arr1));
         }
